@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="stars-lg"></div>
+    <div class="stars-sm"></div>
+    <img class="rocket" src="/assets/rocket.png" alt="rocket">
+    <div class="hero-content container">
+      <img src="/assets/poom.webp" alt="My Photo" class="myphoto">
+      <h1>Hi I'm <span id="typed-text"></span> 👋</h1>
+      <h2>Front-End Developer & UI Designer</h2>
+      <p>
+        I am a computer science student who likes to create websites.
+      </p>
+      <button class="btn btn-custom" onclick="scrollToEducation()">See my work</button>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="education">
+    <h2>🎓 Education</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="edu-card">
+            <h3>Rajamangala University of Technology Isan</h3>
+            <p>Bachelor of Computer science</p>
+            <span>2022-Present</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="edu-card">
+            <h3>Boonluawittayanusorn School</h3>
+            <p>Business Computing Study Plan</p>
+            <span>2016-2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENT SECTION ===== -->
+  <section id="achievement" class="achievement">
+    <h2>💻 Achievements and experience</h2>
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="acm-card">
+            <h3>E-Commerce Website Project</h3>
+            <p>
+              Developed a feature-rich e-commerce platform with product listings, promotional banners, and user-friendly
+              design. Utilized Next.js for frontend and Firebase for backend services. Completed as a course project.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="acm-card">
+            <h3>ID Card Reader Program</h3>
+            <p>
+              Built a Python-based desktop application that reads Thai national ID cards and automatically generates
+              medical
+              certificates. Integrated with a smart card reader for real-time data extraction.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="acm-card">
+            <h3>Snake Game Project</h3>
+            <p>
+              Created a classic snake game using Unity and C#, focusing on game mechanics, UI design, and smooth user
+              interaction.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="acm-card">
+            <h3>Website Timetable-CVD</h3>
+            <p>
+              Developed a scheduling system for staff duty rosters. Built with Next.js and Supabase, providing
+              real-time
+              updates and an intuitive interface for managing shifts.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="acm-card">
+            <h3>Website Quill</h3>
+            <p>
+              This website is part of a project, a final project. It is a website for readers or novel writers.
+            </p>
+            <a href="https://writer-assistant-pied.vercel.app/" style="color: beige;">Link To Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILL SECTION ===== -->
+  <section id="skill" class="skill">
+    <h2>📚 Professional skills and abilities</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="sk-card">
+            <h3>Programming</h3>
+            <p><i class="devicon-typescript-plain colored"></i> TypeScript</p>
+            <p><i class="devicon-go-original-wordmark colored"></i> Go</p>
+            <p><i class="devicon-csharp-plain colored"></i> C#</p>
+            <p><i class="devicon-python-plain colored"></i> Python</p>
+            <p><i class="devicon-javascript-plain colored"></i> JavaScript</p>
+            <p><i class="devicon-html5-plain colored"></i> HTML</p>
+            <p><i class="devicon-css3-plain colored"></i> CSS</p>
+            <p><i class="devicon-cplusplus-plain colored"></i> C++</p>
+            <p><i class="devicon-dart-plain colored"></i> Dart</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="sk-card">
+            <h3>Back End</h3>
+            <p><i class="devicon-supabase-plain colored"></i> Supabase</p>
+            <p><i class="devicon-mysql-plain colored"></i> MySQL</p>
+            <p><i class="devicon-firebase-plain colored"></i> Firebase</p>
+            <p><i class="devicon-docker-plain colored"></i> Docker</p>
+            <p><i class="devicon-sqlite-plain colored"></i> SQLite</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="sk-card">
+            <h3>Tools</h3>
+            <p><i class="fa-solid fa-flask"></i> Examp</p>
+            <p><i class="devicon-github-original colored"></i> Git / GitHub</p>
+            <p><i class="devicon-postman-plain colored"></i> Postman</p>
+            <p><i class="devicon-arduino-plain colored"></i> Arduino IDE</p>
+            <p><i class="fa-solid fa-code"></i> Scratch</p>
+            <p><i class="devicon-figma-plain colored"></i> Figma</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER SECTION ===== -->
+  <footer class="footer bg-dark text-light py-5">
+  <div class="container">
+    <div class="row">
+      
+      <!-- ===== Left side: Contact Info ===== -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h4 class="text-info mb-3 text-md-start text-center">Contact</h4>
+        <p class="mb-1 text-md-start text-center"><i class="bi bi-telephone"></i> Tel: 061-163-8053 / 095-220-7337</p>
+        <p class="mb-1 text-md-start text-center">
+          <i class="bi bi-envelope"></i>
+          G-Mail: <a href="mailto:siwakornpoom04@gmail.com" class="text-info text-decoration-none">siwakornpoom04@gmail.com</a>
+        </p>
+        <p class="mb-1 text-md-start text-center">
+          <i class="bi bi-github"></i>
+          GitHub: <a href="https://github.com/siwakorn1123" class="text-info text-decoration-none" target="_blank">github.com/siwakorn1123</a>
+        </p>
+        <p class="text-md-start text-center"><i class="bi bi-geo-alt"></i> Address: 474/10 Khoksung, Nakhon Ratchasrima 30310</p>
+      </div>
+
+      <!-- ===== Right side: Social Icons ===== -->
+      <div class="col-md-6 text-center text-md-end">
+        <h4 class="text-info mb-3">Follow Me</h4>
+        <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-3">
+          <a href="https://facebook.com/" target="_blank" class="text-info fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/" target="_blank" class="text-info fs-4"><i class="bi bi-instagram"></i></a>
+        </div>
+        <p class="small text-secondary mb-0">
+          © 2025 Siwakorn | Designed with ❤️ using Bootstrap
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

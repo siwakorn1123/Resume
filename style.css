@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  scroll-behavior: smooth;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: radial-gradient(circle at top left, #1e293b, #0f172a);
+}
+
+.stars-lg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  color: #f1f5f9;
+  background: transparent url("https://pngimg.com/uploads/star/star_PNG76911.png") repeat; 
+  opacity: 0.8;
+  animation: moveBigStars 80s linear infinite;
+  z-index: 0;
+}
+
+.stars-sm {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  opacity: 0.6;
+  animation: moveSmallStars 200s linear infinite;
+  z-index: 0;
+}
+
+@keyframes moveBigStars {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-400px, 400px);
+  }
+}
+
+@keyframes moveSmallStars {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-1000px, 1000px);
+  }
+}
+
+/* 🚀 จรวดใหญ่ลอยขึ้น */
+.rocket {
+  position: absolute;
+  bottom: -150px;
+  right: 50px;
+  width: 160px;
+  animation: rocketFly 12s linear infinite;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+@keyframes rocketFly {
+  0% {
+    transform: translate(0, 0) rotate(8deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-300px, -900px) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+/* ===== CONTENT ===== */
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.myphoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+  box-shadow: 0 0 20px #38bdf8aa;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.1);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+
+.hero h2 {
+  font-weight: 400;
+  margin: 10px 0;
+  color: white;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 1rem;
+  color: #94a3b8;
+  margin: 15px auto 25px;
+}
+
+/* Button */
+.btn-custom {
+  background-color: #0085bd !important;
+  color: #ffffff !important;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn-custom:hover {
+  background-color: #0ea5e9 !important;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== EDUCATION SECTION ===== */
+.education {
+  background-color: #1e293b;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.education h2 {
+  color: #38bdf8;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.edu-card {
+  background-color: #0f172a;
+  border-left: 4px solid #38bdf8;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+}
+
+.edu-card h3 {
+  color: #f1f5f9;
+  font-size: 1.2rem;
+}
+
+.edu-card p {
+  color: #94a3b8;
+  margin: 8px 0;
+}
+
+.edu-card span {
+  font-size: 0.9rem;
+  color: #38bdf8;
+}
+
+/* ===== achievement SECTION ===== */
+.achievement {
+  background-color: #1e293b;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.achievement h2 {
+  color: #38bdf8;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.acm-card {
+  background-color: #0f172a;
+  border-left: 4px solid #38bdf8;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.acm-card:hover {
+  transform: translateY(-5px);
+}
+
+.acm-card h3 {
+  color: #f1f5f9;
+  font-size: 1.2rem;
+}
+
+.acm-card p {
+  color: #94a3b8;
+  margin: 8px 0;
+}
+
+.acm-card span {
+  font-size: 0.9rem;
+  color: #38bdf8;
+}
+
+/* ===== SKILL SECTION ===== */
+.skill {
+  background-color: #1e293b;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.skill h2 {
+  color: #38bdf8;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.sk-card {
+  background-color: #0f172a;
+  border-left: 4px solid #38bdf8;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.sk-card:hover {
+  transform: translateY(-5px);
+}
+
+.sk-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.sk-card p {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.sk-card i {
+  font-size: 1.3rem;
+  margin-right: 10px;
+  min-width: 25px;
+}
+
+/* ===== DARK THEME SUPPORT ===== */
+body.dark .skill {
+  color: #f1f5f9;
+}
+
+body.dark .sk-card {
+  border-left: 2px solid #38bdf8;
+}
+
+body.dark .sk-card p {
+  color: #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .skill h2 {
+    font-size: 1.4rem;
+  }
+  .sk-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  padding: 40px 20px 20px;
+  border-top: 2px solid #38bdf8;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-info h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.footer-info p {
+  margin: 6px 0;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.footer-info a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: #0ea5e9;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 25px;
+  border-top: 1px solid #334155;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.footer h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-info h3 {
+    font-size: 1.2rem;
+  }
+  .footer-info p {
+    font-size: 0.9rem;
+  }
+}
+
